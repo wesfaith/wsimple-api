@@ -134,11 +134,12 @@ export namespace accounts {
    * account.
    */
   type AccountList = {
-    cash?: string,
+    /*cash?: string,
     personal?: string,
     tfsa?: string,
     rrsp?: string,
-    crypto?: string,
+    crypto?: string,*./
+    accounts?:string
   };
 
   // supported activity types
