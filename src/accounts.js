@@ -32,12 +32,15 @@ class Accounts {
   async all() {
     const accounts = await this.worker.handleRequest(endpoints.ACCOUNT_IDS, {});
     console.log(accounts);
-    return {
+    /*return {
       cash: accounts.find((account) => account.startsWith('cash')),
       tfsa: accounts.find((account) => account.startsWith('tfsa')),
       rrsp: accounts.find((account) => account.startsWith('rrsp')),
       crypto: accounts.find((account) => account.startsWith('non-registered-crypto')),
       personal: accounts.find((account) => account.startsWith('non-registered') && !account.startsWith('non-registered-crypto')),
+    };*/
+    return {
+      accounts: accounts
     };
   }
 
