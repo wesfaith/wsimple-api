@@ -138,7 +138,7 @@ export namespace accounts {
     personal?: string,
     tfsa?: string,
     rrsp?: string,
-    crypto?: string,*./
+    crypto?: string,*/
     accounts?:string
   };
 
