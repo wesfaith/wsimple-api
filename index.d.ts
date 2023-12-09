@@ -134,6 +134,7 @@ export namespace accounts {
    * account.
    */
   type AccountList = {
+    cash?: string,
     personal?: string,
     tfsa?: string,
     rrsp?: string,
